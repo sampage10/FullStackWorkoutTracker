@@ -1,0 +1,30 @@
+{
+  "name": "fullstackworkouttracker",
+  "version": "1.0.0",
+  "description": "A full stack workout tracker built with React, Node.js, and MongoDB.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampage10/FullStackWorkoutTracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sampage10/FullStackWorkoutTracker/issues"
+  },
+  "homepage": "https://github.com/sampage10/FullStackWorkoutTracker#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
