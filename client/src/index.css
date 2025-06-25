@@ -28,6 +28,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  background-color: #fff; 
+  color: #000;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
