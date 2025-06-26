@@ -12,22 +12,24 @@ const navItems = [
 
 const BottomNav = () => {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
-      <div className="flex justify-around p-4">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            className={({ isActive }) =>
-              `flex flex-col items-center text-sm ${
-                isActive ? "text-blue-500" : "text-gray-500"
-              }`
-            }
-          >
-            <span className="icon">{item.icon}</span>
-            <span className="label">{item.label}</span>
-          </NavLink>
-        ))}
+    <nav className="navbar fixed-bottom bg-light border-top">
+      <div className="container-fluid d-flex justify-content-around">
+        <NavLink to="/profile" className="text-center text-muted nav-link">
+          <MdPerson size={24} />
+          <div style={{ fontSize: '0.75rem' }}>Profile</div>
+        </NavLink>
+        <NavLink to="/history" className="text-center text-muted nav-link">
+          <MdCalendarToday size={24} />
+          <div style={{ fontSize: '0.75rem' }}>History</div>
+        </NavLink>
+        <NavLink to="/" className="text-center text-muted nav-link">
+          <MdNote size={24} />
+          <div style={{ fontSize: '0.75rem' }}>Start</div>
+        </NavLink>
+        <NavLink to="/exercises" className="text-center text-muted nav-link">
+          <MdFitnessCenter size={24} />
+          <div style={{ fontSize: '0.75rem' }}>Exercises</div>
+        </NavLink>
       </div>
     </nav>
   );
